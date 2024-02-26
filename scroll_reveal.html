@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll reveal</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <section class="sec-1">
+        <div class="container">
+            <h2 class="main-title">IITM Anime Mayhem</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="jjk.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Welcome to ANIME MAYHEM 2024! </h3>
+                    <p>Immerse yourself in the vibrant world of anime at Anime Mayhem 2024, where fans gather from all corners of the globe to celebrate their passion for Japanese animation and pop culture. Get ready for an unforgettable weekend filled with exciting events, captivating panels, and opportunities to connect with fellow enthusiasts.</p>
+                </div>
+            </div>
+            
+            
+            <div class="media-icons">
+                <a href="" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="" class="icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="container">
+            <h4 class="section-title">Highlights</h4>
+            <div class="content">
+                <div class="image">
+                    <img src="animeworld2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">events</h4>
+                    <p>
+                        <ol>
+                            <li>Guest Appearances</li>
+                            <li>Cosplay Extravaganza</li>
+                            <li>Exclusive Screenings</li>
+                            <li>Interactive Workshops</li>
+                            <li>Artist Alley and Dealer's Room</li>
+                            <li>Gaming Zone</li>
+                            <li>Panels and Q&A Sessions</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="container">
+            <h3 class="section-title">Follow us</h3>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href=""><i class="fab fa-facebook"></i></a>ANIMEMAYHEM</li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a>ANIME_MAYHEM</li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a>@ANIMEMAYHEM</li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a>ANIMEMAYHEM</li>
+                </div>
+                <div class="image">
+                    <img src="anime2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        ScrollReveal({
+            reset: true ,
+            distance: '60px',
+            duration:2500,
+            delay:400
+        
+        });
+
+
+        ScrollReveal().reveal('.main-title,.section-title,.info', { delay: 400 ,origin:'left'});
+        ScrollReveal().reveal('.sec-1 .image', { delay: 500 ,origin:'bottom'});
+        ScrollReveal().reveal('.text-box', { delay: 600 ,origin:'right'});
+        ScrollReveal().reveal('.media-icons i', { delay: 400 ,origin:'bottom',interval:200});
+        ScrollReveal().reveal('.sec-2 .image', { delay: 400 ,origin:'top'});
+        ScrollReveal().reveal('.sec-3 .image', { delay: 400 ,origin:'top'});
+        ScrollReveal().reveal('.media-info li', { delay: 500 ,origin:'left',interval:200});
+
+    </script>
+    
+</body>
+</html>
